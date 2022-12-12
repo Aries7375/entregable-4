@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Nunito", sans-serif;
+}
+.App {
+  padding: 3rem 0;
+  min-width: 30rem;
+  min-height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp6529949.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.open-btn {
+  display: block;
+  background: #555a88;
+  background: #0fff0f;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  color: #3239c5;
+  padding: 1rem 2rem;
+  margin-left: auto;
+  margin-right: 10%;
+}
+h1 {
+  text-align: center;
+  color: #0fff0f;
+  margin-bottom: 2rem;
+}
+h2 {
+  text-align: center;
+  font-size: 1.9rem;
+}
+p {
+  color: #0fff0f;
+}
+.user-card h2 {
+  color: #0fff0f;
+}
+span {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  color: #d3d3d3;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+button {
+  padding: 0.4rem 0.7rem 0.3rem 0.7rem;
+  cursor: pointer;
+}
+.users-cont {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.user-card {
+  width: 30rem;
+  padding: 1.9rem 1.9rem 0 1.9rem;
+  border: 0.2rem solid #0fff0f;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.5rem;
+  background: #5f9ea066;
+}
+/* .user-name {
+  border-bottom: 0.5px solid #e5e5e5;
+  padding-bottom: 0.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+} */
+.user-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 0.8rem;
+  margin: 1.1rem 0;
+}
+.user-buttons button:nth-child(1) {
+  background: #d85d5d;
+  color: white;
+  border: 0.1rem solid #d93f3f;
+  width: 3.5rem;
+  height: 3rem;
+}
+.user-buttons button:nth-child(2) {
+  background: #f7f7f7;
+  border: 0.1rem solid #bdbdbd;
+  width: 3.5rem;
+  height: 3rem;
+}
+
+.user-info {
+  border-top: 0.5px solid #e5e5e5;
+  border-bottom: 0.5px solid #e5e5e5;
+  padding: 0.8rem 0;
+  margin: 0.4rem 0;
+}
+form {
+  width: 100%;
+  max-width: 30rem;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.075);
+  position: relative;
+  background-image: url("https://centralsimmer.com/wp-content/uploads/2022/11/702164-sims-harvey-wallpaper.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.close-form {
+  display: inline-block;
+  color: red;
+  cursor: pointer;
+  padding: 0 0.2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  transition: transform 100ms ease;
+}
+.close-form:hover {
+  transform: scale(1.1);
+}
+form h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: aliceblue;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+form label {
+  padding-left: 1.2rem;
+  color: aliceblue;
+}
+form input {
+  padding: 0.6rem 1.2rem;
+  outline: 0;
+  color: blue;
+  font-family: inherit;
+  border: none;
+  border: 0.1rem solid #555a88;
+  background: #24bd89bd;
+}
+#form-btn {
+  width: 100%;
+  background: #555a88;
+  color: white;
+  margin-top: 2rem;
+  padding: 0.8rem 0;
+}
+#form-btn:hover {
+  filter: brightness(1.2);
+}
+.form-cont {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #0004;
+  backdrop-filter: blur(2px);
+}
+.hide-form {
+  transform: translateX(-100%);
+}
